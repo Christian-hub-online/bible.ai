@@ -1,0 +1,117 @@
+/*
+Matthew 6:19 “Do not store up for yourselves treasures on earth, where moths and vermin destroy, and where thieves break in and steal. 20 But store up for yourselves treasures in heaven, where moths and vermin do not destroy, and where thieves do not break in and steal. 21 For where your treasure is, there your heart will be also.
+*/
+:root {
+  --background-color2: #7c3f00;
+  --title-color1: #e6eaf0;
+}
+* { 
+  scroll-behavior: smooth;
+  text-decoration: none;
+}
+body{
+  position: relative;
+  background-image: var(--background-color3);
+}
+.title {
+  text-align: center;
+  padding-left: 1vw;
+  color: #7c3f00;
+}
+.subtitle {
+  text-align: center;
+  color: #7c3f00;
+}
+iframe {
+  top: 10vw;
+  width: 80vw;
+  margin: 15px 8vw;
+  height: 60vh;
+}
+.info-text {
+  position: relative;
+  padding: 10px;
+  color: var(--title-color2);
+  font-size: 1.25rem;
+}
+#nav-bar {
+  position: fixed;
+  top: 0;
+  padding-right: 20%; 
+}
+#nav-bar ul{
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  background-color: var(--background-color2);
+  list-style: none;
+  width: 97vw;
+  height: 5vh;
+  z-index: 99;
+  margin-top: 0;
+}
+
+#nav-bar .nav-link {
+  color: var(--title-color1);
+  padding-right: 50px;
+  font-size: 1.25rem;
+}
+#acquire {
+  color: var(--title-color2);
+  font-family: sans-serif;
+  margin-top: 15px;
+  text-align: center;
+}
+#acquire li {
+  padding: 10px;
+  list-style: none;
+}
+.info {
+  text-align: center;
+  font-size: 1.5rem;
+  color: var(--background-color2);
+}
+#header {
+  position: relative;
+  top: 6vh;  
+}
+#header-img {
+  position: relative;
+  top: 0;
+  width: 10vw;
+  height: 11vh;
+}
+.inline {
+  display: flex;
+  width: 80%;
+  margin:0px 30%;
+}
+#email {
+  position: relative; 
+  left: 10vw;
+  margin: 20px;
+  padding: 2px;
+}
+#submit {
+  position: relative;
+  left: 10vw;  
+}
+@media (max-width: 600px){
+  .nav-link {
+    font-size: 15px;   
+  }
+}
+@media (max-width: 400px){
+  .nav-link {
+    font-size: 15px;
+  }
+
+  .navbar {
+    align-items: center;
+  }
+  .navbar li a {
+    font-size: 11px;
+  }
+}
